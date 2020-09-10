@@ -45,4 +45,4 @@ API умеет реализовывать следующие запросы:
 
 ### Цель проекта
 
-Код написан в образовательных целях на курсе [Python для веб - разработки. Flask и проектирование REST API.](https://www.specialist.ru/course/flask1).
+Код написан в образовательных целях на курсе [Python для веб - разработки. Flask и проектирование REST API](https://www.specialist.ru/course/flask1).
