@@ -21,7 +21,7 @@ class ItemCollection(Resource):
 class Item(Resource):
     parser = reqparse.RequestParser()
     parser.add_argument('title', type=str, required=True, help='Field title should be str')
-    parser.add_argument('amount', type=float, required=True, help='Field amount should be float')
+    parser.add_argument('amount', type=int, required=True, help='Field amount should be int')
     parser.add_argument('price', type=float, required=True, help='Field price should be float')
 
     def get(self, _id):
