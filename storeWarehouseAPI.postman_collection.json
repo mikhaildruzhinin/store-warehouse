@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "ef6382ac-ae44-4130-b5e4-424aae4b66d7",
+		"name": "storeWarehouseAPI",
+		"description": "коллекция тестов для API для работы с товарами на складе магазина",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET /api/v1/items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/items",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"items"
+					]
+				},
+				"description": "возвращает все имеющиеся на складе товары или ошибку"
+			},
+			"response": []
+		},
+		{
+			"name": "GET /api/v1/item/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/item/0",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"item",
+						"0"
+					]
+				},
+				"description": "получает информацию о товаре или ошибку"
+			},
+			"response": []
+		},
+		{
+			"name": "POST /api/v1/item/{id}",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Box\",\n    \"amount\": 100,\n    \"price\": 12.55\n} "
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/item/0",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"item",
+						"0"
+					]
+				},
+				"description": "Добавляет новый товар или получает ошибку"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /api/v1/item/{id}",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Table\",\n    \"amount\": 3,\n    \"price\": 14.99\n} "
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/item/0",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"item",
+						"0"
+					]
+				},
+				"description": "Обновляет информацию о товаре или ошибка"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE /api/v1/item/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/item/0",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"item",
+						"0"
+					]
+				},
+				"description": "Удаление товара или ошибка"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
